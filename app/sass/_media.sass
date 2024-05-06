@@ -3,6 +3,13 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1320px)
+	/**/
+	.next
+		transform: translateX(30%)
+	.prev
+		transform: translateX(-30%)
+/* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
 	.slider__item-title
@@ -38,7 +45,7 @@
 	.col-4 
 		margin-bottom: 32px
 	.themes
-		padding-top: 58px
+		padding-top: 0px
 	.themes 
 		position: relative
 		padding-bottom: 100px
@@ -54,6 +61,30 @@
 		font-size: 2.4vw
 	.slick-track
 		margin-left: -26vw
+	.slick-dots
+		display: flex 
+		justify-content: center 
+		align-items: center
+		padding: 0 
+		margin: 0
+		list-style: none
+		margin-top: 0
+		li 
+			margin: 0 0.5vw
+			button
+				font-size: 0
+				width: 3vw 
+				height: 3vw 
+				border: 1px solid #F3A42E
+				border-radius: 50%
+				background: transparent
+				padding: 0
+		.slick-active
+			button
+				background: $yellow
+	.main-screen 
+		padding-bottom: 0
+	
 
 	
 
@@ -64,18 +95,16 @@
 	.h1 
 		font-size: 10.6vw
 	.header 
-		padding-top: 45px
-		padding-bottom: 40px
+		padding-top: 25px
+		padding-bottom: 20px
 	.main-screen
 		padding-top: 0
 	.button 
 		width: 100%
 	.main-screen__image 
-		margin-top: 0
-	.main-screen 
-		.button 
-			order: 5
-			margin-top: -30px
+		margin-top: 30px
+
+
 	.main-screen__list
 		padding-bottom: 0
 	.h2 
@@ -109,13 +138,17 @@
 			font-size: 19px
 			padding: 14px 44px
 	.slick-track
-		margin-left: -82vw
+		margin-left: 0vw
 	.slider__item
-		padding: 2vw
+		padding: 3vw
 	.slider__item-title
 		top: 8vw
 	.slider-wrapper
 		margin-bottom: 30px
+	.main-screen .sub-title
+		margin-bottom: 0
+	.main-screen .list
+		margin-top: 20px
 	
 
 
