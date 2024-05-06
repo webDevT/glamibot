@@ -88,6 +88,8 @@ body
     display: flex 
     padding-top: 8px 
     padding-bottom: 8px
+    position: relative
+    padding-left: 30px
 .list-item:before 
     content: ''
     width: 20px 
@@ -95,8 +97,9 @@ body
     height: 20px 
     background: url('../img/check.svg')
     background-size: 100%
-    position: relative
-    top: 2px
+    position: absolute 
+    top: 10px
+    left: 0
     margin-right: 8px
 .list
     width: 630px
@@ -140,6 +143,8 @@ p
         margin-bottom: 10px
     .sub-title 
         margin-bottom: 0
+    .list-item:last-child .bold 
+        margin-left: 0
 .main-screen__image 
     max-width: 100%
     margin-top: 50px
@@ -306,7 +311,13 @@ p
 .fix-wrapper
     white-space: nowrap
 //end fix btn
-
+.list-item
+    display: block
+    .bold 
+        margin-left: 4px 
+        margin-right: 4px
+        //white-space: nowrap
+        
 @import "media"
 
 
