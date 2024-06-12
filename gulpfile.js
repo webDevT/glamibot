@@ -14,7 +14,7 @@ gulp.task('clean', async function(){
 
 gulp.task('sass', function(){
 	return gulp.src('app/sass/**/*.sass')
-		.pipe(sass({outputStyle: 'compressed'}))
+		.pipe(sass({outputStyle: 'expanded'}))
 		.pipe(autoprefixer({
 			overrideBrowserslist:  ['last 8 versions']
 		}))
@@ -29,7 +29,7 @@ gulp.task('css', function(){
 		'node_modules/normalize.css/normalize.css',
 		'node_modules/slick-carousel/slick/slick.css'
 		])
-	.pipe(sass({outputStyle: 'compressed'}))
+	.pipe(sass({outputStyle: 'expanded'}))
 	.pipe(concat('libs.css'))
 	.pipe(rename({suffix: '.min'}))
 	.pipe(gulp.dest('app/css'))
