@@ -932,6 +932,37 @@ p {
   .how-it-work__header p {
     display: none;
   }
+  .slider-wrapper {
+    min-height: 105.067vw;
+  }
+  .main-screen .container {
+    max-width: 100vw;
+  }
+  .main-screen p.mob {
+    max-width: 92vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-screen .h1 {
+    width: 92vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-screen .button {
+    max-width: 92vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .list {
+    max-width: 92vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .item-list {
+    width: 92vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
