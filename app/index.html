@@ -7,8 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Glami - Твой карманный фотограф</title>	
 	<link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
+	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -44,19 +43,19 @@
 					</div>
 
 					<div class="slider__item">
-						<img src="img/slider1.png" alt="slider image" class="slider__item-bg" width="365" height="502">
+						<img src="img/slider1.webp" alt="slider image" class="slider__item-bg" width="365" height="502">
 					</div>
 
 					<div class="slider__item">					
-						<img src="img/slider2.png" alt="slider image" class="slider__item-bg" width="365" height="502">
+						<img src="img/slider2.webp" alt="slider image" class="slider__item-bg" width="365" height="502">
 					</div>
 
 					<div class="slider__item">
-						<img src="img/slider3.png" alt="slider image" class="slider__item-bg" width="365" height="502">
+						<img src="img/slider3.webp" alt="slider image" class="slider__item-bg" width="365" height="502">
 					</div>
 
 					<div class="slider__item">
-						<img src="img/slider4.png" alt="slider image" class="slider__item-bg" width="365" height="502">
+						<img src="img/slider4.webp" alt="slider image" class="slider__item-bg" width="365" height="502">
 					</div>
 
 				</div>
@@ -66,7 +65,7 @@
 			</div>
 	
 
-			<a href="" class="button mobile-button">
+			<a href="" class="button mobile-button" style="min-height: 54px;">
 				<div class="button-wrapper">
 					создать фото
 				<img src="img/tg.svg" alt="telegram icon" width="19" height="16">
@@ -403,8 +402,9 @@
 	</div>
 	<!-- end fix button -->
 
-	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/slick.js"></script>
+	
 
 	<script>
 		$('.slider').on('init', function(event, slick){
