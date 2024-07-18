@@ -286,9 +286,19 @@ p
     margin-top: 20px
     text-align: center
 .footer-link
-    font-size: 13px 
+    font-size: 16px 
     text-decoration: underline
     color: #909090
+    white-space: nowrap
+.footer__links
+    display: flex 
+    align-items: center 
+    justify-content: center
+.footer-link 
+    margin-left: 10px 
+    margin-right: 10px 
+    margin-top: 15px
+    margin-bottom: 10px
 //end footer style 
 
 //start fix btn 
@@ -406,6 +416,63 @@ p
 .slick-dots
     button 
         outline: none
+
+//start footer thems      
+.footer__thems
+    display: flex 
+    justify-content: center
+    flex-wrap: wrap
+    font-size: 14px
+    margin-top: 20px
+    margin-bottom: 10px
+.footer__theme-item
+    display: flex 
+    justify-content: center 
+    align-items: center 
+    white-space: nowrap
+    background: rgba(#2EACE1, 0.2)
+    padding: 3px 16px
+    margin: 5px
+    border-radius: 20px
+    text-decoration: none
+    color: rgba(#1B2839, 0.6)
+    font-weight: 500
+    transition: all 0.3s
+.footer__theme-item:hover
+    background: rgba(#2EACE1, 0.8)
+    color: #fff
+//end footer thems
+
+//start about style 
+.about-row
+    display: flex
+.about-col 
+    width: 50%
+.text 
+    margin-bottom: 30px
+.join-us 
+    padding-bottom: 150px
+    p
+        text-align: center
+.about-row
+    display: flex 
+    align-items: center
+    text-align: left
+    .h1 
+        margin-top: 0
+        text-align: left
+    p 
+        text-align: left
+.about-section
+    .row 
+        align-items: center  
+.about-main-screen
+    padding-top: 0
+    padding-bottom: 0
+.tech-image
+    margin-left: -40px
+//end about style
+
 @import "media"
 
 
