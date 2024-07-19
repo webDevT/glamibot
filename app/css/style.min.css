@@ -713,8 +713,6 @@ p {
       -ms-flex-align: center;
           align-items: center;
   white-space: nowrap;
-  background: rgba(46, 172, 225, 0.2);
-  padding: 3px 16px;
   margin: 5px;
   border-radius: 20px;
   text-decoration: none;
@@ -726,8 +724,7 @@ p {
 }
 
 .footer__theme-item:hover {
-  background: rgba(46, 172, 225, 0.8);
-  color: #fff;
+  text-decoration: underline;
 }
 
 .about-row {

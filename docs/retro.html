@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Селфи за 3 секунды!">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Glami - Твой карманный фотограф</title>	
+	<link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+	<!-- start header -->
+	<header class="header">
+		<div class="container">
+			<div class="logo">
+				<a href="/">
+					<img src="img/logo.svg" alt="Glamybot logo" width="272" height="34">
+				</a>
+			</div>
+		</div>
+	</header>
+	<!-- end header -->
+
+	<!-- start main screen -->
+	<div class="main-screen main-screen--photo">
+		<div class="container">
+
+			<div class="photo-content">
+
+				<div class="photo__header">
+					<div class="avatar-wrapper">						
+							<img src="img/avatar19.png" alt="">
+						
+						
+					</div>
+					<div class="user-name">
+						john_doe_journey
+					</div>
+
+					<div class="dot"></div>
+
+					<div class="date">
+						18.05.2024
+					</div>
+				</div>
+
+				<div class="photo-wrapper">
+				<img src="img/photo19.webp" alt="ilustartion" class="main-screen__image" width="340" height="511">
+			</div>
+
+			</div>
+			
+			
+			
+			<h1 class="h1">
+				Хочешь такое <span>фото? </span>
+				<br>
+			</h1>
+
+			<p>
+				Загрузи одно селфи и за 5 секунд, <br>
+получи 30 новых фото <br>
+100% бесплатно
+			</p>
+			
+			<a href="" class="button">
+				<div class="button-wrapper">
+					создать фото
+				<img src="img/tg.svg" alt="telegram icon" width="19" height="16">
+				</div>
+			
+				
+			</a>
+
+			<div class="sub-title-wrapper">
+				<div class="sub-title">
+				Новый сервис в Telegram!
+			</div>
+
+			</div>
+
+			
+			
+		
+
+	</div>
+	</div>
+	<!-- end main screen -->
+
+	
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="container">
+			<a href="">
+				<img src="img/logo.svg" alt="glamybot logo" width="272" height="34">
+			</a>
+			<div class="copy">© 2024 GLAMOURS ME. Все права защищены.</div>
+			<a href="" class="footer-link">
+				Политика обработки персональных данных
+			</a>
+		</div>
+	</footer>
+	<!-- end footer -->
+
+
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+	<script>
+		$('.slider').on('init', function(event, slick){
+    if($(window).width() < 768){ 
+        slick.slickRemove(0); 
+    }
+});
+	$('.slider').slick({
+  slidesToShow: 5,
+  
+  prevArrow: $('.prev'),
+  nextArrow: $('.next'),
+  infinite: false,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 4,
+        
+      }
+    },
+	{
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+        
+      }
+    },
+	{
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1.2,
+		dots: true,
+        
+      }
+    },
+]
+});
+
+		document.addEventListener("DOMContentLoaded", function() {
+    const targetElement = document.getElementById('fix-wrapper');
+    const footer = document.querySelector('footer');
+    function toggleFlexOnScroll() {
+        let fromTop = window.scrollY;
+        let footerTop = footer.offsetTop;
+
+        if (fromTop > 0 && fromTop + window.innerHeight < footerTop) {
+            targetElement.style.display = 'flex';
+        } else {
+            targetElement.style.display = 'none';
+        }
+    }
+
+    window.addEventListener('scroll', toggleFlexOnScroll);
+});
+
+	</script>
+</body>
+</html>
