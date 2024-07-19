@@ -295,6 +295,14 @@
 		margin-top: 10px
 		margin-bottom: 10px
 		flex-wrap: wrap
+		justify-content: center
+		.footer-link
+			width: 100%
+			text-align: center
+		.footer-link:first-child,
+		.footer-link:nth-child(2)
+			width: auto 
+
 	.footer-link
 		width: 48%
 		margin-left: 0 
@@ -304,6 +312,9 @@
 	.footer__theme-item
 		text-align: left
 		justify-content: flex-start
+	.footer__links .footer-link
+		text-align: center
+		padding: 0 20px
 	
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 370px)

@@ -1237,6 +1237,17 @@ p {
     margin-bottom: 10px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__links .footer-link {
+    width: 100%;
+    text-align: center;
+  }
+  .footer__links .footer-link:first-child,
+.footer__links .footer-link:nth-child(2) {
+    width: auto;
   }
   .footer-link {
     width: 48%;
@@ -1251,6 +1262,10 @@ p {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+  .footer__links .footer-link {
+    text-align: center;
+    padding: 0 20px;
   }
 }
 /* Custom, iPhone Retina */
